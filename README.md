@@ -9,6 +9,8 @@ I wrote this in order to help me move the masses of advertisement that is not sp
 
 Drag an OWL ontology file onto this Dropzone action. An analysis of the ontology is performed and the results (including expressiveness (OWL profile/DL family) and metrics like module cohesion are stored in the clipboard (one line separated with tabs, so that it can be pasted into a Numbers/Excel table).
 
+Uses https://github.com/RalphBln/onto-module-metrics
+
 ## Strip EXIF.dzbundle
 
 Drag an image file onto the action, and all EXIF data of the image will be removed.

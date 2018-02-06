@@ -30,7 +30,7 @@ def dragged():
 
     for item in items:
         for line in open(item, 'r'):
-            match = re.search("^Message-ID: <(.*)>$", line)
+            match = re.search("^Message-ID: <(.*)>$", line, re.IGNORECASE)
             if match:
                 messageID = match.group(1)
                 if subprocess.check_output(["/usr/bin/osascript", "AddSenderOfMailToFilter.applescript", messageID]).strip() == "1":
